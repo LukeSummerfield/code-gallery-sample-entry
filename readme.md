@@ -1,15 +1,8 @@
-# HubSpot Code Gallery Sample Entry
-Sample Entry for HubSpot Code Gallery
-
-## Coded files (html, css and javascript)
-.html, .css and .js files will be picked up automatically regardless of filename.
-Files in each category will be listed in alphabetical order on the code gallery website.
+# Horizontal Gallery Module
+A responsive, horizontally-scrolling gallery starter module for use in HubSpot sites. This module is meant as a starting point for you to modify and adapt to your page templates.
 
 ## Screenshots
-Add screenshots under the screenshots folder.
-.jpeg, .jpg, .png and .gif files will be picked up automatically regardless of filename.
-Screenshots will be listed in alphabetical order on the code gallery website.
+Check out the screenshots folder to see examples of this module in action.
 
-## Metadata
-Add the title, description, categories, demo url, video url and HubSpot marketplace url by replacing the contents of the hubspotcodegallery.yaml.
-Categories are added as a comma separated list and each item in the list must match an existing category on the Code Gallery website.
+## Module Configuration
+As of right now, the modules available in this gallery are not available for direct import. Reference module_config.json for instructions for configuring fields in the module editor.

@@ -1,1 +1,13 @@
-<!-- HTML & HubL code goes here -->
+<div class="horiz-scrolling-module">
+    <div class="horiz-scrolling-module__text-container">
+      <h4>{{ module.headline }}</h4>
+      <p>{{ module.subhead }}</p>
+    </div>
+    <div class="horiz-scrolling-module__image-container">
+        {% for image in module.images %}
+        <a class="horiz-scrolling-module__image" href="{{ image.link_href }}">
+            <h5>{{ image.link_text }}</h5><img src="{{ image.image_src.src }}" alt="{{ image.image_src.alt }}" />
+        </a>
+        {% endfor %}
+    </div>
+  </div>

@@ -1,0 +1,76 @@
+{
+  "schema_version" : 1,
+  "legacy_name" : null,
+  "name" : "horizontal-gallery-module",
+  "widget_label" : "Horizontal Gallery Module",
+  "fields" : [ {
+    "id" : "",
+    "name" : "headline",
+    "label" : "Headline",
+    "sortable" : false,
+    "required" : true,
+    "locked" : false,
+    "hierarchical" : false,
+    "max_depth" : 0,
+    "type" : "text",
+    "default" : "Image Gallery"
+  }, {
+    "id" : "",
+    "name" : "subhead",
+    "label" : "Subhead",
+    "sortable" : false,
+    "required" : true,
+    "locked" : false,
+    "hierarchical" : false,
+    "max_depth" : 0,
+    "type" : "text",
+    "default" : "This project required a huge amount of hours but  sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim."
+  }, {
+    "id" : "",
+    "name" : "images",
+    "label" : "Images",
+    "sortable" : false,
+    "required" : false,
+    "locked" : false,
+    "hierarchical" : false,
+    "max_depth" : 0,
+    "children" : [ {
+      "id" : "",
+      "name" : "image_src",
+      "label" : "Source Image",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "hierarchical" : false,
+      "max_depth" : 0,
+      "resizable" : true,
+      "type" : "image",
+      "default" : {
+        "src" : "https://placehold.it/504x379px.jpg",
+        "alt" : "Alt Text Goes Here"
+      }
+    }, {
+      "id" : "",
+      "name" : "link_href",
+      "label" : "Link",
+      "sortable" : false,
+      "required" : true,
+      "locked" : false,
+      "hierarchical" : false,
+      "max_depth" : 0,
+      "type" : "text",
+      "default" : "https://google.com"
+    } ],
+    "type" : "group",
+    "repeatable": true
+  } ],
+  "source" : "<div class='horiz-scrolling-module'> <div class='horiz-scrolling-module__text-container'> <h4>{{module.headline}}</h4> <p>{{module.subhead}}</p></div><div class='horiz-scrolling-module__image-container'>{% for image in module.images %}<a class='horiz-scrolling-module__image' href='{{image.link_href}}'> <h5>{{image.link_text}}</h5><img src='{{image.image_src.src}}' alt='{{image.image_src.alt}}'/> </a>{% endfor %}</div></div>",
+  "css" : null,
+  "js" : null,
+  "tags" : [ "Code Gallery", "Horizontal Gallery", "Page Section Module" ],
+  "css_assets" : [ "./horizontal-module.css" ],
+  "js_assets" : [ ],
+  "label" : "Horizontal Gallery Module",
+  "global" : false,
+  "help_text" : ""
+}
